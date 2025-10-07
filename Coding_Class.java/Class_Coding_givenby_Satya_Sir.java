@@ -469,7 +469,7 @@
 //     }
 // }
 
-/** ****  Merge Two array ****** */
+/** ****  Merge short array ****** */
 public class ArrayExample {
 
     public static void mergeArray(int arr1[], int arr2[]) {
@@ -650,3 +650,6 @@ public class ArrayExample {
 //         printArray(arr);
 //     }
 // }
+
+
+
