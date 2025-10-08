@@ -840,9 +840,148 @@ public class PalindromeNumber {
 
 /** *************************  Xylem or Phloem number  ************************************* */
 
+
+import java.util.Scanner;
+
+public class XylemPhloem {
+
+    // Function to get sum of first and last digits
+    public static int sumFirstLast(int num) {
+        int last = num % 10;
+
+        int first = num;
+        while (first >= 10) {
+            first = first / 10; // keep dividing to get first digit
+        }
+
+        return first + last;
+    }
+
+    // Function to get sum of middle digits
+    public static int sumMiddleDigits(int num) {
+        int sum = 0;
+
+        // Remove last digit
+        num = num / 10;
+
+        // Remove first digit
+        int first = num;
+        while (first >= 10) {
+            first = first / 10; // get first digit
+        }
+
+        // Sum all digits except first digit
+        while (num > 0) {
+            int digit = num % 10;
+            if (digit != first) {  // skip first digit
+                sum += digit;
+            }
+            num = num / 10;
+        }
+
+        return sum;
+    }
+
+    // Function to check Xylem or Phloem
+    public static void checkXylemPhloem(int num) {
+        int sumExtreme = sumFirstLast(num);
+        int sumMiddle = sumMiddleDigits(num);
+
+        if (sumExtreme == sumMiddle) {
+            System.out.println(num + " is a Xylem Number.");
+        } else {
+            System.out.println(num + " is a Phloem Number.");
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        checkXylemPhloem(num);
+        sc.close();
+    }
+}
+
+
 /** *************************WAP to return array is accending or decending in same program ************************************* */
+import java.util.Scanner;
+
+public class ArrayOrderCheck {
+
+    // Returns an array of two booleans: [ascending, descending]
+    public static boolean[] checkArrayOrder(int[] arr) {
+        boolean ascending = true;
+        boolean descending = true;
+
+        for (int i = 0; i < arr.length - 1; i++) {
+            if (arr[i] < arr[i + 1]) {
+                descending = false;
+            } else if (arr[i] > arr[i + 1]) {
+                ascending = false;
+            }
+        }
+
+        return new boolean[]{ascending, descending};
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter size of array: ");
+        int n = sc.nextInt();
+
+        int[] arr = new int[n];
+        System.out.println("Enter array elements:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        // Call function to get ascending/descending flags
+        boolean[] result = checkArrayOrder(arr);
+        boolean ascending = result[0];
+        boolean descending = result[1];
+
+        // Printing logic in main
+        if (ascending) {
+            System.out.println("The array is in Ascending order.");
+        } else if (descending) {
+            System.out.println("The array is in Descending order.");
+        } else {
+            System.out.println("The array is neither Ascending nor Descending.");
+        }
+
+        sc.close();
+    }
+}
 
 /** *************************  print the common element between two array  ************************************* */
+
+public class ArrayOrderCheck {
+
+    public static void intersection_ele(int arr_1[], int arr_2[]) {
+        System.out.print("Intersection element are: ");
+        for (int i = 0; i < arr_1.length; i++) {
+            for (int j = 0; j < arr_2.length; j++) {
+                if (arr_1[i] == arr_2[j]) {
+                    System.out.print(arr_1[i] + " ");
+                }
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        int arr_1[] = {1, 2, 3, 4};
+        int arr_2[] = {2, 3};
+        intersection_ele(arr_1, arr_2);
+    }
+}
+
+
 /** *************************  right shift the array   ************************************* */
+
+
+
 /** *************************  left shif and the array   ************************************* */
 /** ************************* the 1st half of the array is reverse order and the 2nd half in normal order ************************************* */
