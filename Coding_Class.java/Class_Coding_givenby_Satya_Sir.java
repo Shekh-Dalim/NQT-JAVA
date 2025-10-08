@@ -682,10 +682,162 @@ public class ArrayExample {
 
 /** *************************  Chech a neon number  ************************************* */
 
+import java.util.Scanner;
+
+public class NeonNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        int square = num * num;
+        int sum = 0;
+
+        while (square > 0) {
+            int digit = square % 10;
+            sum += digit;
+            square /= 10;
+        }
+
+        if (sum == num) {
+            System.out.println(num + " is a Neon Number.");
+        } else {
+            System.out.println(num + " is not a Neon Number.");
+        }
+    }
+}
+
+
 /** *************************  Bouncy Number  ************************************* */
+import java.util.Scanner;
+
+public class Array_1 {
+
+    // Function to check if a number is bouncy
+    public static boolean checkBouncyNumber(int num) {
+
+        // Numbers with less than 3 digits are never bouncy
+        if (num < 100) {
+            return false;
+        }
+
+        boolean increasing = false;
+        boolean decreasing = false;
+
+        int prevDigit = num % 10; // last digit
+        num = num / 10;
+
+        while (num > 0) {
+            int currDigit = num % 10;
+
+            if (currDigit < prevDigit) {
+                increasing = true;  // trend is increasing
+            } else if (currDigit > prevDigit) {
+                decreasing = true;  // trend is decreasing
+            }
+
+            // If both increasing and decreasing trends exist → number is bouncy
+            if (increasing && decreasing) {
+                return true;
+            }
+
+            prevDigit = currDigit;
+            num = num / 10;
+        }
+
+        return false; // number is not bouncy
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the user number: ");
+        int num = sc.nextInt();
+
+        boolean ans = checkBouncyNumber(num);
+
+        if (ans) {
+            System.out.println("The number is Bouncy");
+        } else {
+            System.out.println("The number is not Bouncy");
+        }
+
+        sc.close();
+    }
+}
 
 /** *************************  Harshad number  ************************************* */
+
+
+import java.util.Scanner;
+
+public class NeonNumber {
+
+    public static boolean chekharshad(int num) {
+        int sum = 0;
+       int trial = num;
+
+        while (trial > 0) {
+            int digit = trial % 10;
+            sum += digit;
+            trial /= 10;
+        }
+
+        if (num % sum == 0) {
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        if (chekharshad(num)) {
+            System.out.println(num + " is a Harshad Number.");
+        } else {
+            System.out.println(num + " is not a Harshad Number.");
+        }
+    }
+}
+
+
 /** *************************  Palindrome number  ************************************* */
+
+import java.util.Scanner;
+
+public class PalindromeNumber {
+    public static boolean isPalindrome(int num) {
+        int original = num;   // store original number
+        int reversed = 0;     // to store reversed number
+
+        while (num > 0) {
+            int digit = num % 10;         // get last digit
+            reversed = reversed * 10 + digit; // build reversed number
+            num = num / 10;               // remove last digit
+        }
+
+        return original == reversed; // check if palindrome
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        if (isPalindrome(num)) {
+            System.out.println(num + " is a Palindrome number.");
+        } else {
+            System.out.println(num + " is NOT a Palindrome number.");
+        }
+
+        sc.close();
+    }
+}
+
 /** *************************  Xylem or Phloem number  ************************************* */
 
 /** *************************WAP to return array is accending or decending in same program ************************************* */
