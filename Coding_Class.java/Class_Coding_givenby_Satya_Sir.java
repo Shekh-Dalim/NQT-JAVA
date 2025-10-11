@@ -985,3 +985,15 @@ public class ArrayOrderCheck {
 
 /** *************************  left shif and the array   ************************************* */
 /** ************************* the 1st half of the array is reverse order and the 2nd half in normal order ************************************* */
+/** *************************  happy number and Sad number   ************************************* */
+/** *************************  WAP to find the highest common factor of two number   ************************************* */
+/** ************************* WAP to cheack wheather a given number armstrong or not   ************************************* */
+/** *************************  WAP check wheather a given number is perfect    ************************************* */
+/** *************************magic number************************************* */
+/** *************************  Fibonacci Series ************************************* */
+/** ************************* Alter prime number  ************************************* */
+/** *************************  find the frequency of all the element present in an array ************************************* */
+
+
+
+
