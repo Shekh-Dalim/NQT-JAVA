@@ -993,6 +993,22 @@ public class ArrayOrderCheck {
 /** *************************  Fibonacci Series ************************************* */
 /** ************************* Alter prime number  ************************************* */
 /** *************************  find the frequency of all the element present in an array ************************************* */
+/** ************************* Count the total number of alphabets present in string  ************************************* */
+/** ************************* Count the vowels the string  ************************************* */
+/** ************************* Print only the constrant from string ************************************* */
+/** ************************* replace the character in a string ************************************* */
+/** *************************Reverse a string ************************************* */
+/** ************************* Check wheather a string is palindrom or not ************************************* */
+/** ************************* Check wheather a string is Anagram number or not  ************************************* */
+/** ************************* Count the frequency of a target character from a String ************************************* */
+/** *************************Count the frequency of all the characters present in a given string ************************************* */
+/** ************************* remove Dublicate from string or print unique element from a string ************************************* */
+/** ************************* Print the 1st non-repeating character in a string ************************************* */
+/** *************************Check wheather a char is present in a string or not  ************************************* */
+/** ************************* Check wheather a substring is present insize another string or not  ************************************* */
+
+
+
 
 
 
