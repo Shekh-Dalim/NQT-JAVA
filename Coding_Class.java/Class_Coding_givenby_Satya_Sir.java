@@ -1008,6 +1008,57 @@ public class ArrayOrderCheck {
 /** ************************* Check wheather a substring is present insize another string or not  ************************************* */
 
 
+/** *************************   Find the largest sub-string of a string ************************************* */
+/** *************************  Count the Frequency of a sub-string  ************************************* */
+/** *************************  Find the 1st char of every word in a string  ************************************* */
+/** *************************  Count the number ,upper-case Alphabets , lowercase,alphabets and Special chaaracter pressent in a string  ************************************* */
+/** *************************  Wheather the passward is valid or not  ************************************* */
+/** *************************  Find the missing char from a sequency of a character  ************************************* */
+/** *************************  Find wheather a  string is in either ascending and or decending order  ************************************* */
+
+/######################## Pattern #####################/ 
+    /*
+    Grid
+    co-ordinate 
+    condition
+    space 
+    */
+    
+
+/** *************************  Printing the primary diagonal  ************************************* */
+/** *************************  printing the secondery diagonal  ************************************* */
+/** *************************  Printing a cross ************************************* */
+/** *************************  printing to print jessus cross ************************************* */
+/** *************************  printing to print holosquare  ************************************* */
+/** *************************  printing right angle traingle ************************************* */
+/** *************************  printing to RAT toward the upper part of the printing diagonal  ************************************* */
+/**************************** printing RAT for secondary diagonal **************************/    
+/**************************** printing RAT towar the top of the secondary diagonal **************************/    
+/**************************** printing the normal traingle  **************************/    
+/**************************** printing the reverse normal traingle **************************/
+/**************************** printing a number normal traingle **************************/
+
+
+/######################## 2D Array #####################/     
+
+
+
+
+
+
+
+    
+    
+/**************************** TO Store and printing in 2D array **************************/    
+/****************************  Find the sum of all the element present in the primarge diagonal if the matrix **************************/     
+/****************************  To iterate the row array **************************/ 
+/**************************** FInd the product of all the element present in the secondary diagonal in a given matrix  **************************/ 
+/**************************** Transposing a given matrix **************************/ 
+/****************************  **************************/ 
+    
+
+    
+    
 
 
 
