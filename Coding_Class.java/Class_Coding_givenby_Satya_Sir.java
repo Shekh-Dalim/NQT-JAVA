@@ -1057,6 +1057,41 @@ public class ArrayOrderCheck {
 /****************************  **************************/ 
     
 
+/######################## Sorting #####################/       
+
+     // using one for loop
+    
+    public static void bubbleSort(int[] A, int n) {
+        boolean swapped;
+        for (int i = 0; i < n - 1; i++) { // Pass
+                if (A[i] > A[i + 1]) {
+                    int temp = A[i];
+                    A[i] = A[i + 1];
+                    A[i + 1] = temp;
+                    i = -1;
+            }
+            
+        }
+    }
+
+// // using two for loop
+    public static void bubbleSort(int[] A, int n) {
+        boolean swapped;
+        for (int i = 0; i < n - 1; i++) { // Pass
+            swapped = false;
+            for (int j = 0; j < n - 1 - i; j++) { // Swap
+                if (A[j] > A[j + 1]) {
+                    int temp = A[j];
+                    A[j] = A[j + 1];
+                    A[j + 1] = temp;
+                    swapped = true;
+                }
+            }
+            if (!swapped) { // NOT swappedOr wapped == false
+                break;
+            }
+        }
+    }
     
     
 
